@@ -29,8 +29,8 @@ export function LoginForm({
 
   console.log("component reloaded");
 
-  const onSubmitCode = () => {
-    const success = validateLoginCode(code);
+  const onSubmitCode = async () => {
+    const success = await validateLoginCode(code);
     if (success) {
       setDisplayError(false);
       setIsLoggedIn(true);
