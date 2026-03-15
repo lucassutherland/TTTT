@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Login } from "./Login";
-import "./App.css";
+import { LoginForm } from "./components/login-form";
+// import "./App.css";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -10,7 +11,7 @@ function App() {
       {isLoggedIn ? (
         <div>homepage</div>
       ) : (
-        <Login setIsLoggedIn={setIsLoggedIn} />
+        <LoginForm setIsLoggedIn={setIsLoggedIn} />
       )}
     </>
   );

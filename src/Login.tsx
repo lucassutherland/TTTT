@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { validateLoginCode } from "./service";
-import "./Login.css";
+import { validateLoginCode } from "./lib/APIService";
+// import "./Login.css";
+import { Button } from "@/components/ui/button";
 
 export function Login({
   setIsLoggedIn,
@@ -31,7 +32,8 @@ export function Login({
           }}
         ></input>
         {displayError && <p className="error-text">Invalid code</p>}
-        <button onClick={onSubmitCode}>Submit</button>
+
+        <Button onClick={onSubmitCode}>Submit</Button>
       </div>
     </div>
   );
