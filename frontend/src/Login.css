@@ -1,0 +1,15 @@
+.login-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-modal {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(198, 198, 198);
+  padding: 60px;
+  justify-content: center;
+  border-radius: 24px;
+}
